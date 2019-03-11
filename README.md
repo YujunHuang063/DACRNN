@@ -1,4 +1,4 @@
-# Diffusion Convolutional Recurrent Neural Network: Data-Driven Traffic Forecasting
+# Diffusion Attention Convolutional Recurrent Neural Network for Traffic Forecasting
 
 ![Diffusion Convolutional Recurrent Neural Network](figures/model_architecture.jpg "Model Architecture")
 
@@ -32,7 +32,7 @@ The generated train/val/test dataset will be saved at `data/METR-LA/{train,val,t
 
 ## Model Training
 ```bash
-python dcrnn_train.py --config_filename=data/model/dcrnn_config.yaml
+python dacrnn_train.py --config_filename=data/model/dcrnn_config.yaml
 ```
 Each epoch takes about 7min~14min with a single GTX 1080 Ti.
 
