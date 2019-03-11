@@ -2,9 +2,7 @@
 
 ![Diffusion Convolutional Recurrent Neural Network](figures/model_architecture.jpg "Model Architecture")
 
-This is a TensorFlow implementation of Diffusion Convolutional Recurrent Neural Network in the following paper: \
-Yaguang Li, Rose Yu, Cyrus Shahabi, Yan Liu, [Diffusion Convolutional Recurrent Neural Network: Data-Driven Traffic Forecasting](https://arxiv.org/abs/1707.01926), ICLR 2018.
-
+This is a TensorFlow implementation of Diffusion Attention Convolutional Recurrent Neural Network.
 
 ## Requirements
 - scipy>=0.19.0
@@ -20,8 +18,8 @@ pip install -r requirements.txt
 ```
 
 ## Data Preparation
-The traffic data file for Los Angeles, i.e., `df_highway_2012_4mon_sample.h5`, is available at [Google Drive](https://drive.google.com/open?id=1tjf5aXCgUoimvADyxKqb-YUlxP8O46pb) or [Baidu Yun](https://pan.baidu.com/s/1rsCq38a9SRyFO1F68tUscA), and should be
-put into the `data/METR-LA` folder.
+The traffic data file for Los Angeles, i.e., `METR-LA.h5`, is available at [Google Drive](https://drive.google.com/open?id=1tjf5aXCgUoimvADyxKqb-YUlxP8O46pb), [Baidu Yun](https://pan.baidu.com/s/1rsCq38a9SRyFO1F68tUscA) or [DCRNN](https://github.com/liyaguang/DCRNN), and should be
+put into the `data` folder.
 Besides, the locations of sensors are available at [data/sensor_graph/graph_sensor_locations.csv](https://github.com/liyaguang/DCRNN/blob/master/data/sensor_graph/graph_sensor_locations.csv).
 ```bash
 python -m scripts.generate_training_data --output_dir=data/METR-LA
