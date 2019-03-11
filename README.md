@@ -2,7 +2,7 @@
 
 ![Diffusion Convolutional Recurrent Neural Network](figures/model_architecture.jpg "Model Architecture")
 
-This is a TensorFlow implementation of Diffusion Attention Convolutional Recurrent Neural Network.
+This is a TensorFlow implementation of Diffusion Attention Convolutional Recurrent Neural Network. This code is based on [DCRNN](https://github.com/liyaguang/DCRNN)
 
 ## Requirements
 - scipy>=0.19.0
