@@ -1,0 +1,1 @@
+python dcrnn_train.py --config_filename=data/model/dcrnn_config.yaml
